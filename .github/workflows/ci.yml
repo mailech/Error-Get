@@ -18,7 +18,7 @@ jobs:
 
   notify-sentinel:
     needs: test
-    if: needs.test.result == 'failure'
+    if: failure()
     runs-on: ubuntu-latest
     steps:
       - name: Notify Sentinel of CI failure
