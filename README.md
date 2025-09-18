@@ -1,2 +1,1 @@
-# Error-Get
-This Repo is For errors
+Seeded by Sentinel demo.
