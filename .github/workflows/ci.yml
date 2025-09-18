@@ -14,7 +14,7 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: pytest -q
-    continue-on-error: true
+    # Remove continue-on-error: true so workflow fails on test failure
 
   notify-sentinel:
     needs: test
